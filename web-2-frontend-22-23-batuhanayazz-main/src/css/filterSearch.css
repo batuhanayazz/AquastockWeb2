@@ -1,0 +1,49 @@
+ #tags {
+     width: 80%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin: 10px auto;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-weight: bold;
+ }
+
+ .tag {
+     color: white;
+     padding: 10px 20px;
+     background-color: var(--primary-color);
+     border-radius: 50px;
+     margin: 5px;
+     display: inline-block;
+     cursor: pointer;
+     border: 2px solid var(--primary-color);
+ }
+
+ .tag.active {
+     background-color: #1F2833;
+ }
+
+
+ .search {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+ }
+
+ .searchTerm {
+     width: 80%;
+     border: 3px solid var(--primary-color);
+     padding: 5px;
+     border-radius: 10px 10px 10px 10px;
+     outline: none;
+     color: #9DBFAF;
+     background-color: var(--fish-box-background);
+     font-weight: bold;
+     font-size: 23px;
+     text-align: center;
+ }
+
+ .searchTerm:focus {
+     color: #00B4CC;
+ }

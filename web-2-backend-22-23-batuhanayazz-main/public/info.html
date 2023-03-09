@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaStock Information</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1>GET</h1>
+            <h2>Get Clients</h2>
+            <ul>
+                <li>' /clients ' to get all clients</li>
+                <li>' /clients/client/:clientID ' to get 1 client by id</li>
+            </ul>
+            <h2>Get Stock</h2>
+            <ul>
+                <li>' /clients/stocks ' to get all stocks</li>
+                <li>' /clients/client/:clientID/stock ' to get 1 stock from client by id</li>
+            </ul>
+            <h2>Get Stock</h2>
+            <ul>
+                <li>' /clients/stocks ' to get all stocks</li>
+                <li>' /clients/client/:clientID/stock ' to get 1 stock from client by id</li>
+            </ul>
+            <h2>Get Fishes</h2>
+            <ul>
+                <li>' /fish ' to get all fishes</li>
+            </ul>
+            <h1>POST</h1>
+            <h2>Post Clients</h2>
+            <ul>
+                <li>' /signup ' to create client</li>
+                <p> => provide a body of:{
+                    "email": "email",
+                    "password": "password"
+                }</p>
+                <li>' /login ' to sign in </li>
+                <p> => provide a body of:{
+                    "email": "email",
+                    "password": "password"
+                }</p>
+            </ul>
+            <h2>Post Stock</h2>
+            <ul>
+                <li>' /clients/stocks ' to create stock for client</li>
+                <p> => provide a body of:{
+                    "client_id": "client_id",
+                    "fish_id": "fish_id",
+                    "quantity": "quantity"
+                }</p>
+            </ul>
+            <h2>Post Fish</h2>
+            <ul>
+                <li>' /fish ' to send fish to database</li>
+                <p> => provide a body of:{
+                    "fish_id": "fish_id",
+                    "common_name": "common_name",
+                    "scientific_name": "scientific_name",
+                    "species_group": "species_group",
+                    "image_link": "image_link"
+                }</p>
+            </ul>
+            <h1>UPDATE</h1>
+            <h2>Update Stock</h2>
+            <ul>
+                <li>' /clients/client/:clientID/stock ' to update fish quantity by client id</li>
+            </ul>
+            <h1>DELETE</h1>
+            <h2>Delete Stock</h2>
+            <ul>
+                <li>' /clients/client/:clientID/stock ' to delete fish stock by client id</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

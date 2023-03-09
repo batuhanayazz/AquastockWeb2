@@ -1,0 +1,139 @@
+.cardCollection{
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fish-box {
+  display: inline-block;
+  margin-left: 3%;
+}
+
+.img-container img {
+  border-radius: 20px 20px 0px 0px;
+  width: 350px;
+  height: 250px;
+  border: solid;
+  border-color: var(--fish-box-background);
+  border-width: 5px 5px 0 5px;
+  border-radius: 10px;
+}
+
+.info-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: var(--fish-box-background);
+  margin: -120px 0px 0px 0px;
+}
+
+.info-container h4 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.info-container h2 {
+  margin: 20px 0px 5px 0px;
+}
+
+.info-container h3 {
+  margin: 0px 0px 10px 0px;
+}
+
+.counterButtons {
+  padding: 10px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.counterButtons>button {
+  border: none;
+  height: 30px;
+  width: 30px;
+  color: var(--fish-box-background);
+  font-size: 30px;
+  border-radius: 25px;
+}
+.counterButtons .min {
+  background-color: red;
+}
+.counterButtons .plus {
+  background-color: green;
+}
+
+.counterButtons input {
+  color: white;
+  font-size: 20px;
+  background-color: #1F2833;
+  text-align: center;
+  width: 20%;
+  border: none;
+  border-radius: 5px;
+  margin: 0px 5px 0px 5px;
+  padding: 3px 0px 3px 0px;
+}
+
+.info-container .addMyStock {
+  font-size: 15px;
+  font-weight: bold;
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: #357960;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 2%;
+  border: none;
+}
+.info-container .addMyStock:hover {
+  background: #1c4033;
+  transition: var(--tran-02);
+}
+.fish-box .infoButton {
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: var(--primary-color);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fish-box .infoButton:hover {
+  background: #1F2833;
+  transition: var(--tran-02);
+}
+.info-container .updateButton {
+  font-size: 15px;
+  font-weight: bold;
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: #3b846a;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 2%;
+  border: none;
+}
+.info-container .updateButton:hover {
+  background: #00a76a;
+  transition: var(--tran-02);
+}
+.fish-box .deleteButton {
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  width: 140px;
+  height: 50px;
+  color: #fff;
+  background: rgb(150, 0, 0);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.fish-box .deleteButton:hover {
+  background: red;
+  transition: var(--tran-02);
+}

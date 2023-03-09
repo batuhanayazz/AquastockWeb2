@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----===== BoxIcons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="https://iili.io/HCgpcIj.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">AQUA STOCK</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="./index.html" class="active">
+                            <i class='bx bx-home-alt icon' id="homePage"></i>
+                            <span class="text nav-text" id="homePage">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="./stock.html" id="stockHTML">
+                            <i class='bx bx-store-alt icon' id="myStockPage"></i>
+                            <span class="text nav-text" id="myStockPage">My stock</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bottom-content" id="bottom-content">
+                <li class="" id="loginUser">
+                    <a href="#" id="logout">
+                        <i class='bx bx-log-in icon' id="loginIcon"></i>
+                        <span class="text nav-text" id="loginText">Login</span>
+                    </a>
+                </li>
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+    </nav>
+    <section class="elements" id="elements">
+        <div class="catalogMessage" id="catalogMessage">
+        </div>
+        <div class="logo">
+            <img src="https://iili.io/HCgplhx.png" alt="aquaStock-logo">
+        </div>
+        <div class="search">
+            <input type="text" class="searchTerm" placeholder="What are you looking for?" id="searchTerm">
+        </div>
+        <div id="tags">
+            <div class="tag active" id="allSpeciesFish">All</div>
+            <div class="tag" id="americanCichlids">American Cichlids</div>
+            <div class="tag" id="africanCichlids">African Cichlids</div>
+            <div class="tag" id="livebearer">Livebearer</div>
+            <div class="tag" id="tetras">Tetras</div>
+        </div>
+        <div id="overlay"></div>
+        <div class="accountContainer" id="accountContainer">
+            <div class="loginSignUp">
+                <input type="checkbox" id="chk" aria-hidden="true">
+
+                <div class="signUp">
+                    <form id="registerForm">
+                        <div class="messages" id="messages">
+                            <div class="responseMessages" id="responseMessages">
+                                <p style="background-color: #45A29E"></p>
+                            </div>
+                    </div>
+                        <label for="chk" aria-hidden="true">Become a Member</label>
+                        <input type="username" id="signUpUserName" name="username" placeholder="Username" required="">
+                        <input type="email" id="signUpEmail" name="email" placeholder="Email" required="">
+                        <input type="password" id="signUpPassword" name="psw" placeholder="Password" required="">
+                        <input type="password" id="signUpPassword2" name="psw2" placeholder="Repeat Password"
+                            required="">
+                        <button type="submit">Sign up</button>
+                    </form>
+                </div>
+
+                <div class="login">
+                    <form id="loginForm" class="loginForm">
+                        <label for="chk" aria-hidden="true">Login</label>
+                        <input type="email" id="loginEmail" name="email" placeholder="Email" required="">
+                        <input type="password" id="loginPassword" name="psw" placeholder="Password" required="">
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="cardCollection" id="cardCollection"></div>
+    </section>
+    <!-- <script src="./src/js/homePage.js"></script>
+    <script src="./src/js/navigation.js"></script>
+    <script src="./src/js/authHomePage.js"></script>
+    <script src="./src/js/login.js"></script>
+    <script src="./src/js/register.js"></script> -->
+
+</body>
+
+</html>

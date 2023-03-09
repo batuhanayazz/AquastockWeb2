@@ -1,0 +1,136 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Source+Sans+Pro&display=swap');
+ @import "./src/css/navigation.css";
+ @import "./src/css/filterSearch.css";
+ @import "./src/css/fishBox.css";
+ @import "./src/css/fishCardModal.css";
+ @import "./src/css/loginSignUp.css";
+
+ /* https://stackoverflow.com/questions/66356024/does-not-affect-the-transition-in-innerhtml */
+ .fade-in {
+    -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .fade-out {
+    -webkit-animation: fade-out 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+    animation: fade-out 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  
+  @-webkit-keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ :root {
+     /* ===== Root Colors ===== */
+     /* Body Color*/
+     --body-color: #E4E9F7;
+     /* Sidebar Color*/
+     --sidebar-color: #FFF;
+     --sidebar-color-light: #F6F5FF;
+     --primary-color: #45A29E;
+     --toggle-color: #DDD;
+     --text-color: #1F2833;
+     /* Fish-Box Color */
+     --fish-box-background: #FFF;
+
+
+     /* ====== Transition ====== */
+     --tran-02: all 0.2s ease;
+     --tran-03: all 0.3s ease;
+
+ }
+
+ body.dark {
+     /* Body Color*/
+     --body-color: #0B0C10;
+     /* Sidebar Color*/
+     --sidebar-color: #1F2833;
+     --sidebar-color-light: #313f50;
+     --primary-color: #45A29E;
+     --toggle-color: #fff;
+     --text-color: #ccc;
+     /* Fish-Box Color */
+     --fish-box-background: #E4E9F7;
+
+ }
+
+ body {
+     min-height: 100vh;
+     background-color: var(--body-color);
+     transition: var(--tran-03);
+ }
+
+ ::selection {
+     background-color: var(--primary-color);
+     color: #fff;
+ }
+
+ /* Container installation */
+ .elements {
+     position: absolute;
+     top: 0;
+     top: 0;
+     left: 250px;
+     height: 100vh;
+     width: calc(100% - 250px);
+     background-color: var(--body-color);
+     transition: var(--tran-03);
+ }
+ .elements .logo{
+    text-align: center;
+    margin: 50px 0px 50px 0px;
+    width: 100%;
+    height: auto;
+ }
+ .elements .logo img{
+    width: 400px;
+    height: auto;
+ }
+ .catalogMessage{
+  font-family: 'Source Sans Pro', sans-serif;
+  right: 0;
+  margin: 10px 5px 0px 0px;
+  position:fixed;
+ }
+ .catalogMessage p{
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+	font-weight: bold;
+	letter-spacing: 1px;
+ }
